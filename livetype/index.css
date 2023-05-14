@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Cipher 1.10';
+    src: url('Cipher+1.10.otf') format("opentype");
+    font-style: BaseM;
+    font-display: block;
+}
+@font-face {
+    font-family: 'Maven Pro';
+    src: url('Cipher+1.10.otf') format('woff2'), url('MavenPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+#inBox {
+    font-family: 'Cipher 1.10';
+    font-size: 50px;
+    width:100%;
+    box-sizing: border-box;
+}
+#output {
+    font-family: 'Cipher 1.10';
+    font-size: 75px;
+}

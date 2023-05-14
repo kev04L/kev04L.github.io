@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Cipher 1.10';
+    src: url('resources/fonts/Cipher+1.10.otf') format("opentype");
+    font-style: BaseM;
+    font-display: block;
+}
+@font-face {
+    font-family: 'Maven Pro';
+    src: url('resources/fonts/roboto.woff2') format('woff2'), url('resources/fonts/roboto.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+header1 {
+    font-size:14px;
+}

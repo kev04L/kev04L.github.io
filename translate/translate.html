@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kevin Cypher Translator</title>
+    <link rel="icon" href="../resources/images/favicon.ico" type="image/icon" />
+    <link rel="stylesheet" type="text/css" href="translate.css" />
+    <script src="../resources/jquery-3.6.0.min.js"></script>
+    <script src="translate.js"></script>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div id="head_bar">
+      <div id="left_icons">
+        <a href="../index.html">
+          <img
+            id="home_pic"
+            src="../resources/images/k.png"
+            alt="link to home page"
+          />
+        </a>
+      </div>
+      <div id="right_icons">
+        <a href="../translate/translate.html">
+          <img
+            id="translate_pic"
+            src="../resources/images/translate.png"
+            alt="link to translate page"
+          />
+        </a>
+        <a href="../english/english.html">
+          <img
+            id="english_pic"
+            src="../resources/images/english.png"
+            alt="link to english page"
+          />
+        </a>
+        <a href="../livetype/livetype.html">
+          <img
+            id="livetype_pic"
+            src="../resources/images/livetype.png"
+            alt="link to livetype page"
+          />
+        </a>
+        <a href="../pdf/pdf.html">
+          <img
+            id="pdf_pic"
+            src="../resources/images/pdf.png"
+            alt="link to pdf page"
+          />
+        </a>
+        <a href="../image/image.html">
+          <img
+            id="image_pic"
+            src="../resources/images/image.png"
+            alt="link to image page"
+          />
+        </a>
+      </div>
+    </div>
+    <div id="translation_area">
+      <textarea
+        id="inBox"
+        oninput="adjustInBoxHeight(this)"
+        name="inBox"
+      ></textarea>
+      <div id="submit">Translate</div>
+      <textarea
+        id="output"
+        readonly
+        oninput="adjustOutputHeight(this)"
+        name="output"
+      ></textarea>
+    </div>
+  </body>
+</html>
