@@ -1,5 +1,6 @@
+window.addEventListener('resize', adjustInBoxHeight);
 function adjustInBoxHeight(el) {
-    el.style.height = "auto";
+    //el.style.height = "auto";
     el.style.height = el.scrollHeight + "px";
 }
 
