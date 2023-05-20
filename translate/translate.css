@@ -11,7 +11,7 @@
     font-style: normal;
     font-display: swap;
 }
-@media only screen and (max-width: 767px) {
+@media (pointer: coarse) {
     body {
       zoom: 1.75;
     }
