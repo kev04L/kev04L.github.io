@@ -1,7 +1,10 @@
 window.addEventListener('resize', adjustInBoxHeight);
-function adjustInBoxHeight(el) {
+function adjustInBoxHeight() {
     //el.style.height = "auto";
-    el.style.height = el.scrollHeight + "px";
+    //el.style.height = el.scrollHeight + "px";
+    var inBoxHeight = document.getElementById('myTextarea');
+    inBoxHeight.style.height = textarea.scrollHeight;
+
 }
 
 const LETTER = "abcdefghijklmnopqrstuvwxyz"; //for getting correct letter position
