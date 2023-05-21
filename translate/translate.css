@@ -113,6 +113,9 @@ a {
     background-color: rgb(79, 134, 246);
     color:white;
     box-shadow: 0px 0px 4px rgb(124, 124, 124);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 }
 #output {
