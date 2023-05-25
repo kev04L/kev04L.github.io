@@ -1,136 +1,130 @@
 @font-face {
-    font-family: 'Cipher 1.10';
-    src: url('../resources/fonts/Cipher+1.10.otf') format("opentype");
-    font-style: BaseM;
-    font-display: block;
+  font-family: "Cipher 1.10";
+  src: url("../resources/fonts/Cipher+1.10.otf") format("opentype");
+  font-style: BaseM;
+  font-display: block;
 }
 @font-face {
-    font-family: 'Roboto';
-    src: url('../resources/fonts/roboto.woff2') format('woff2'), url('../resources/fonts/roboto.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Roboto";
+  src: url("../resources/fonts/roboto.woff2") format("woff2"),
+    url("../resources/fonts/roboto.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 @media (pointer: coarse) {
-    body {
-        zoom: 1.75;
-    }
-    #output {
-        font-size: 50px;
-    }
+  body {
+    zoom: 1.75;
+  }
+  #output {
+    font-size: 50px;
+  }
 }
 @media (pointer: fine) {
-    #output {
-        font-size: 75px;
-    }
+  #output {
+    font-size: 75px;
+  }
 }
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 body {
-    margin:0px;
+  margin: 0px;
 }
 #head_bar {
-    padding:20px;
-    height:90px;
-    background-color: rgb(220, 220, 220);
+  padding: 20px;
+  height: 90px;
+  background-color: rgb(220, 220, 220);
 }
 #left_icons {
-    float:left;
-    align-items: center;
-    width:100px;
+  float: left;
+  align-items: center;
+  width: 100px;
 }
 #right_icons {
-    float:right;
-    align-items: center;
-    width:306px;
+  float: right;
+  align-items: center;
+  width: 306px;
 }
 a {
-    text-decoration: none;
-}  
+  text-decoration: none;
+}
 #home_pic {
-    width:50px;
-    height:auto;
-    border-radius: 12px;
+  width: 50px;
+  height: auto;
+  border-radius: 12px;
 }
 #translate_pic {
-    width:50px;
-    height:auto;
-    border-radius: 12px;
+  width: 50px;
+  height: auto;
+  border-radius: 12px;
 }
 #english_pic {
-    width:50px;
-    height:auto;
-    border-radius: 12px;
-    margin-left:10px;
+  width: 50px;
+  height: auto;
+  border-radius: 12px;
+  margin-left: 10px;
 }
 #livetype_pic {
-    width:50px;
-    height:auto;
-    border-radius: 12px;
-    margin-left:10px;
+  width: 50px;
+  height: auto;
+  border-radius: 12px;
+  margin-left: 10px;
 }
 #pdf_pic {
-    width:50px;
-    height:auto;
-    border-radius: 12px;
-    margin-left:10px;
+  width: 50px;
+  height: auto;
+  border-radius: 12px;
+  margin-left: 10px;
 }
 #image_pic {
-    width:50px;
-    height:auto;
-    border-radius: 12px;
-    margin-left:10px;
+  width: 50px;
+  height: auto;
+  border-radius: 12px;
+  margin-left: 10px;
 }
 #translation_area {
-    margin-top: 40px;
-    padding: 0px 40px 0px 40px;
-    display: flex;
-    flex-direction: column;
+  margin-top: 40px;
+  padding: 0px 40px 0px 40px;
+  display: flex;
+  flex-direction: column;
 }
 #inBox {
-    font-family: 'Roboto';
-    font-size:24px;
-    width:100%;
-    padding:10px;
-    border-radius: 12px;
-    resize: none;
-    overflow-y: auto;
-    height: auto;
-    min-height: 150px;
-    max-height: 400px;
-    outline: none;
-    border: 1px solid rgb(196, 196, 196);
-    box-shadow: 0px 0px 4px rgb(124, 124, 124);
+  font-family: "Roboto";
+  font-size: 24px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  overflow: auto;
+  min-height: 150px;
+  max-height: 450px;
+  outline: none;
+  border: 1px solid rgb(196, 196, 196);
+  box-shadow: 0px 0px 4px rgb(124, 124, 124);
 }
 #submit {
-    font-family: 'Roboto';
-    font-size:16px;
-    margin: 30px;
-    padding: 15px;
-    border-radius: 12px;
-    float:left;
-    background-color: rgb(79, 134, 246);
-    color:white;
-    box-shadow: 0px 0px 4px rgb(124, 124, 124);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  font-family: "Roboto";
+  font-size: 16px;
+  margin: 30px;
+  padding: 15px;
+  border-radius: 12px;
+  float: left;
+  background-color: rgb(79, 134, 246);
+  color: white;
+  box-shadow: 0px 0px 4px rgb(124, 124, 124);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 #output {
-    font-family: 'Cipher 1.10';
-    width:100%;
-    padding: 0px 10px 10px 10px;
-    margin-bottom:40px;
-    border-radius: 12px;
-    resize: none;
-    overflow-y: auto;
-    height: auto;
-    min-height: 300px;
-    border: 1px solid rgb(196, 196, 196);
-    box-shadow: 0px 0px 4px rgb(124, 124, 124);
-}
-#output:focus {
-    outline: none;
+  font-family: "Cipher 1.10";
+  width: 100%;
+  padding: 0px 10px 10px 10px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  overflow: auto;
+  min-height: 280px;
+  border: 1px solid rgb(196, 196, 196);
+  box-shadow: 0px 0px 4px rgb(124, 124, 124);
 }

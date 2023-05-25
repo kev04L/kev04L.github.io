@@ -58,18 +58,9 @@
       </div>
     </div>
     <div id="translation_area">
-      <textarea
-        id="inBox"
-        oninput="adjustInBoxHeight(this)"
-        name="inBox"
-      ></textarea>
+      <div contenteditable="true" id="inBox"></div>
       <div id="submit">Translate</div>
-      <textarea
-        id="output"
-        readonly
-        oninput="adjustOutputHeight(this)"
-        name="output"
-      ></textarea>
+      <div contenteditable="true" id="output"></div>
     </div>
   </body>
 </html>
