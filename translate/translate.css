@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Cipher 1.10";
-  src: url("../resources/fonts/Cipher+1.10.otf") format("opentype");
+  font-family: "Cipher 1.13";
+  src: url("../resources/fonts/Cipher+1.13.otf") format("opentype");
   font-style: BaseM;
   font-display: block;
 }
@@ -13,14 +13,36 @@
   font-display: swap;
 }
 @media (pointer: coarse) {
+  /* for MOBILE users only */
   body {
     zoom: 1.75;
   }
+  #inBox {
+    font-size: 40px;
+    scrollbar-color: transparent transparent;
+  }
+  #inBox::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  #InBox::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  #submit {
+    font-size: 22px;
+  }
   #output {
-    font-size: 50px;
+    font-size: 75px;
   }
 }
 @media (pointer: fine) {
+  /* for PC users only */
+  #inBox {
+    font-size: 24px;
+  }
+  #submit {
+    font-size: 20px;
+  }
   #output {
     font-size: 75px;
   }
@@ -53,35 +75,53 @@ a {
   width: 50px;
   height: auto;
   border-radius: 12px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 #translate_pic {
   width: 50px;
   height: auto;
   border-radius: 12px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 #english_pic {
   width: 50px;
   height: auto;
   border-radius: 12px;
   margin-left: 10px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 #livetype_pic {
   width: 50px;
   height: auto;
   border-radius: 12px;
   margin-left: 10px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 #pdf_pic {
   width: 50px;
   height: auto;
   border-radius: 12px;
   margin-left: 10px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 #image_pic {
   width: 50px;
   height: auto;
   border-radius: 12px;
   margin-left: 10px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 #translation_area {
   margin-top: 40px;
@@ -91,7 +131,6 @@ a {
 }
 #inBox {
   font-family: "Roboto";
-  font-size: 24px;
   width: 100%;
   padding: 10px;
   border-radius: 12px;
@@ -104,7 +143,6 @@ a {
 }
 #submit {
   font-family: "Roboto";
-  font-size: 16px;
   margin: 30px;
   padding: 15px;
   border-radius: 12px;
@@ -118,7 +156,8 @@ a {
   user-select: none;
 }
 #output {
-  font-family: "Cipher 1.10";
+  font-family: "Cipher 1.13";
+  word-wrap: break-word;
   width: 100%;
   padding: 0px 10px 10px 10px;
   margin-bottom: 40px;
