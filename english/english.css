@@ -1,13 +1,16 @@
 @font-face {
   font-family: "Cipher 1.13";
-  src: url("../resources/fonts/Cipher+1.13.otf") format("opentype");
+  src: url("../resources/fonts/Cipher+1.13.otf") format("opentype"),
+    url("../resources/fonts/roboto.woff2") format("woff2"),
+    url("../resources/fonts/roboto.woff") format("woff");
   font-style: BaseM;
   font-display: block;
 }
 @font-face {
   font-family: "Roboto";
   src: url("../resources/fonts/roboto.woff2") format("woff2"),
-    url("../resources/fonts/roboto.woff") format("woff");
+    url("../resources/fonts/roboto.woff") format("woff"),
+    url("../resources/fonts/Cipher+1.13.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
